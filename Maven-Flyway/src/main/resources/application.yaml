@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/jooq_experiment}
+    username: ${DB_USER:admin}
+    password: ${DB_PASSWORD:password}
+    driver-class-name: org.postgresql.Driver
+  jooq:
+    sql-dialect: postgres
+logging:
+  level:
+    org.flyway: info
